@@ -1,6 +1,8 @@
 TFAuth: Unified Two-Factor Client
 =====================
 
+[![Build Status](https://secure.travis-ci.org/enygma/tfauth.png?branch=master)](http://travis-ci.org/enygma/tfauth)
+
 The goal of TFAuth is to provide an easy way for developers to integrate multiple 
 two-factor authentication methods into their application.
 
