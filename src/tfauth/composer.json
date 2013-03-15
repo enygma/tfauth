@@ -1,0 +1,27 @@
+{
+    "name":"enygma/tfauth",
+    "type":"library",
+    "description":"PHP library to interface with multiple two-factor auth services",
+    "keywords":["twofactor", "yubikey", "duoauth", "authy", "gauth", "google", "duosecurity"],
+    "homepage":"https://github.com/enygma/tfauth.git",
+    "license":"MIT",
+    "authors":[
+        {
+            "name":"Chris Cornutt",
+            "email":"ccornutt@phpdeveloper.org",
+            "homepage":"http://www.phpdeveloper.org/"
+        }
+    ],
+    "require":{
+        "php":">=5.3.1",
+        "guzzle/guzzle": "3.0.*@dev",
+        "enygma/duoauth": "dev-master",
+        "enygma/yubikey": "dev-master",
+        "enygma/gauth": "dev-master"
+    },
+    "autoload":{
+        "psr-0":{
+            "TFAuth":"src/"
+        }
+    }
+}
