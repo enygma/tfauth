@@ -22,7 +22,7 @@ require_once 'vendor/autoload.php';
 /**
  * This script can be called from the command line like:
  * 
- * ./test.php [duo|gauth] [code] [username]
+ * ./test.php [duo|gauth|yubikey] [code] [username]
  */
 
 $code = $_SERVER['argv'][2];
@@ -42,6 +42,12 @@ switch ($_SERVER['argv'][1]) {
             'init' => 'gauth-init-key'
         );
         $type = 'gauth';
+        break;
+    case 'yubikey':
+        $config = array(
+            'api_key' => 'yubico-api-key',
+            'client_id' => 'yubico-client-id'
+        );
         break;
 }
 echo 'Validating code "'.$code.'" for user "'.$username .'"'."\n\n";
