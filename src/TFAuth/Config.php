@@ -4,6 +4,10 @@ namespace TFAuth;
 
 abstract class Config
 {
+    /**
+     * Current configuration settings
+     * @var array
+     */
     private $config = array();
 
     /**
