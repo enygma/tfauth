@@ -4,12 +4,9 @@ namespace TFAuth\Adapter;
 
 class Duoauth extends \TFAuth\Adapter
 {
-    public function validate($username, $code)
+    public function validate($code, $username = null)
     {
-        echo 'validating code: '.$code."\n\n";
-
         $config = $this->getConfig();
-        print_r($config);
 
         $user = new \DuoAuth\User();
         $user->setConfig($config->getConfig());
